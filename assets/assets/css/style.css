@@ -1,0 +1,99 @@
+
+:root {
+    --sub-heading:rgb(51, 57, 65); 
+    --text-color: rgb(232, 103, 238);
+    --border-color: white;
+}
+
+body {
+    background-color: rgb(51, 57, 65);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,h3,h1,p {
+    color:rgb(232, 103, 238);
+    margin: 0px;
+}
+
+a {
+    color: var(--border-color);
+}
+
+.header {
+text-align: center;
+}
+
+.header p {
+    padding-top: 1px;
+}
+
+.container-wrapper { 
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin:auto;
+
+}
+
+.container-header {
+    flex: 0 1 calc(33.33% - 10px)
+    width: 200px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    border-color:var(--border-color);
+    border-style: dashed;
+    border-radius: 0px;
+    position: relative;
+    border-width: 2px;
+}
+
+.sub-header {
+    background-color: var(--sub-heading);
+    position:absolute;
+    text-align: center;
+    border-radius: 8px;
+    border: var(--border-color) solid;
+    top: -16px;
+    left:25%;
+    border-width: 1px;
+}
+
+.sub-header h3 {
+    padding:3px;
+    margin:0px;
+}
+
+.code-box {
+    background-image: linear-gradient(
+    rgba(228, 79, 234, 0.3) 0%,
+    rgb(232, 103, 238) 100%
+    );
+}
+
+.container-header:hover {
+    box-shadow: 0 0 15px 5px rgba(186, 104, 200, 0.5); 
+}
+
+.container-header:hover .sub-header {
+    box-shadow: 0 0 15px 5px rgba(186, 104, 200, 0.5); 
+}
+
+.footer {
+text-align: center;
+}
+
+.footer p {
+    padding-top: 25px;
+}
+
+@media (max-width: 768px) {
+    .container-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
